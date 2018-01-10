@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd ~/commands
+rm $1
+echo "$1 has been successfully removed !"
