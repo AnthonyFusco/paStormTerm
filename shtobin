@@ -17,8 +17,8 @@ if [ "$here" != "~/commands" ]
         mv $1 ~/commands
 fi
 
-cd ~/commands
-nCommand=$(ls -p | grep -v / | wc -l)
+# cd ~/commands
+# nCommand=$(ls -p | grep -v / | wc -l)
 
-file=$(cowsay -l | tail -n +2 | tr ' ' '\n' | shuf -n 1)
-cowsay -f $file there is now $nCommand custom commands available !
+# file=$(cowsay -l | tail -n +2 | tr ' ' '\n' | shuf -n 1)
+# cowsay -f $file there is now $nCommand custom commands available !

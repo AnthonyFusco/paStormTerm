@@ -2,22 +2,21 @@
 
 Welcome on the amazing paStormTerm Github page ! \
 You will find here a lot of useful scripts for any linux developer. \
-If you want to easily create your own ones, there is two ways to end it :
+If you want to easily create your own, there is two ways to it :
 
-* To create a bash langage based script :
+* To create a bash-based script :
 ```bash
 create-script [script-name]
 shtobin [script-name]
 #just restart the terminal and you will be able to start your script
 ```
 
-* To create a python langage based script :
+* To create a python-based script :
 ```bash
 create-python [script-name]
 shtobin [script-name]
 #just restart the terminal and you will be able to start your script
 ```
-
 
 ## Setup the repository
 
