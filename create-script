@@ -1,5 +1,11 @@
-#!/bin/sh
+#!/usr/bin/env python3
+import sys, os
+from commandUtils import *
 
-touch $1
-echo "#!/bin/sh" >> $1
-code $1
+f = open(sys.argv[1], "w")
+f.write("#!/bin/sh\n")
+f.close()
+editor = os.environ['EDITOR']
+if editor == "" :
+    editor = "nano"
+os.system(editor + " " + sys.argv[1])

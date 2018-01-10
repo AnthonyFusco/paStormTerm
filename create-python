@@ -5,4 +5,7 @@ from commandUtils import *
 f = open(sys.argv[1], "w")
 f.write("#!/usr/bin/env python3\n")
 f.close()
-os.system("code " + sys.argv[1])
+editor = os.environ['EDITOR']
+if editor == "" :
+    editor = "nano"
+os.system(editor + " " + sys.argv[1])
