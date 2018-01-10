@@ -4,11 +4,8 @@
 
 ```bash
 cd ~
-
 mkdir commands
-
 cd commands
-
 git clone https://github.com/AnthonyFusco/paStormTerm.git
 ```
 
@@ -18,7 +15,6 @@ add in your shell configuration file (.bashrc or .zshrc)
 
 ```bash
 path+=('/home/afusco/commands')
-
 export PATH
 ```
 
