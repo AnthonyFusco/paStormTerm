@@ -1,0 +1,16 @@
+#!/bin/sh
+if [ $# -eq 0 ]
+  then
+    echo "need params"
+  else
+    t=240
+    while [ $t -gt 0 ]
+      do
+        clear
+	sleep 0.01s
+        figlet $1 | lolcat   
+        sleep 0.03s
+        t=$((t-1))
+      done
+fi
+

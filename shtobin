@@ -1,0 +1,22 @@
+#!/bin/bash
+
+if [ $# -eq 0 ]
+  then
+    echo "No arguments supplied"
+    exit 1
+fi
+
+echo -e "\033[34m" ; figlet Command ; echo -e "\033[32m" ; figlet $1 ; echo -e "\033[34m" ; figlet Added ; echo -e "\033[0m"
+chmod u+x $1
+
+here=$(pwd)
+if [ "$here" != "/home/afusco/command" ]
+    then    
+        mv $1 ~/command
+fi
+
+cd ~/command
+nCommand=$(ls -1q . | wc -l)
+
+file=$(cowsay -l | tail -n +2 | tr ' ' '\n' | shuf -n 1)
+cowsay -f $file there is now $nCommand custom command available !

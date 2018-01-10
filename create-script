@@ -1,0 +1,5 @@
+#!/bin/sh
+
+touch $1
+echo "#!/bin/sh" >> $1
+code $1

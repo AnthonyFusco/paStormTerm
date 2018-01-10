@@ -1,0 +1,3 @@
+#!/bin/sh
+
+( echo "alias $1=\"$2\"" ; echo "" )  >> ~/.zshrc

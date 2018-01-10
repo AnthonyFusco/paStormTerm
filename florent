@@ -1,0 +1,15 @@
+#!/bin/sh
+if [ $# -eq 0 ]
+  then
+    figlet Florent Pastor le PD | lolcat -a
+  else
+    t=240
+    while [ $t -gt 0 ]
+      do
+	clear
+	sleep 0.01s
+        figlet Florent Pastor le PD | lolcat
+        sleep 0.03s
+        t=$((t-1))
+      done
+fi
