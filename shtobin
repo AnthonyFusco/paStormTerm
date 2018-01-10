@@ -9,14 +9,16 @@ fi
 echo -e "\033[34m" ; figlet Command ; echo -e "\033[32m" ; figlet $1 ; echo -e "\033[34m" ; figlet Added ; echo -e "\033[0m"
 chmod u+x $1
 
+mkdir -p ~/commands
+
 here=$(pwd)
-if [ "$here" != "/home/afusco/command" ]
+if [ "$here" != "~/commands" ]
     then    
-        mv $1 ~/command
+        mv $1 ~/commands
 fi
 
-cd ~/command
-nCommand=$(ls -1q . | wc -l)
+cd ~/commands
+nCommand=$(ls -p | grep -v / | wc -l)
 
 file=$(cowsay -l | tail -n +2 | tr ' ' '\n' | shuf -n 1)
-cowsay -f $file there is now $nCommand custom command available !
+cowsay -f $file there is now $nCommand custom commands available !
