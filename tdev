@@ -4,5 +4,3 @@ tmux split-window -v
 tmux split-window -h
 tmux split-window -v
 tmux attach-session -d 
-tmux send -t dev.1 florent ENTER
-tmux send-keys -t dev.2 top ENTER
