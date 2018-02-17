@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo systemctl start docker
+systemctl start docker
