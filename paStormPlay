@@ -7,7 +7,7 @@ case "$1" in
       aplay -q $pwd/paStormSounds/HAL/halsorry.wav
       ;;
     "operational")
-      play -q $pwd/paStormSounds/HAL/operatnl.wav
+      aplay -q $pwd/paStormSounds/HAL/operatnl.wav
       ;;
     "davepls")
       aplay -q $pwd/paStormSounds/HAL/dave.wav
