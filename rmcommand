@@ -1,5 +1,6 @@
 #!/bin/bash
 
-cd ~/commands
+here="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+cd "$here"
 rm $1
 echo "$1 has been successfully removed !"

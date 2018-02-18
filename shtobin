@@ -9,12 +9,13 @@ fi
 echo -e "\033[34m" ; figlet Command ; echo -e "\033[32m" ; figlet $1 ; echo -e "\033[34m" ; figlet Added ; echo -e "\033[0m"
 chmod u+x $1
 
-mkdir -p ~/commands
+here="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-here=$(pwd)
-if [ "$here" != "~/commands" ]
-    then    
-        mv $1 ~/commands
+location=$(pwd)
+
+if [ "$location" != "$here" ]
+    then
+        mv $1 "$here"
 fi
 
 # cd ~/commands

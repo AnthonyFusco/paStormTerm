@@ -25,6 +25,7 @@ case "$1" in
       echo "one of : sorry operational davepls why IKNOW results"
       ;;
     *)
+      echo "wrong command" 
       aplay -q $pwd/paStormSounds/HAL/halsorry.wav
       exit 1
       ;;
