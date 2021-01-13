@@ -32,7 +32,7 @@ git clone https://github.com/AnthonyFusco/paStormTerm.git
 Add in your shell configuration file (.bashrc or .zshrc)
 
 ```bash
-path+=('$HOME/commands')
+path+=('$HOME/commands/paStormTerm')
 export PATH
 ```
 
