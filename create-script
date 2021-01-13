@@ -3,7 +3,7 @@ import sys, os
 from commandUtils import *
 
 f = open(sys.argv[1], "w")
-f.write("#!/bin/sh\n")
+f.write("#!/bin/bash\n")
 f.close()
 editor = os.environ['EDITOR']
 if editor == "" :

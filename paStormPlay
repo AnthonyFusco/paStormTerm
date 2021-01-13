@@ -1,32 +1,32 @@
-#!/bin/sh
+#!/bin/bash
 
-pwd="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+p="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 case "$1" in
     "sorry")
-      aplay -q $pwd/commands/paStormTerm/paStormSounds/HAL/halsorry.wav
+      aplay -q $p/paStormSounds/HAL/halsorry.wav
       ;;
     "operational")
-      aplay -q $pwd/commands/paStormTerm/paStormSounds/HAL/operatnl.wav
+      aplay -q $p/paStormSounds/HAL/operatnl.wav
       ;;
     "davepls")
-      aplay -q $pwd/commands/paStormTerm/paStormSounds/HAL/dave.wav
+      aplay -q $p/paStormSounds/HAL/dave.wav
       ;;
     "why")
-      aplay -q $pwd/commands/paStormTerm/paStormSounds/HAL/error.wav
+      aplay -q $p/paStormSounds/HAL/error.wav
       ;;
     "IKNOW")
-      aplay -q $pwd/commands/paStormTerm/paStormSounds/HAL/cantalow.wav
+      aplay -q $p/paStormSounds/HAL/cantalow.wav
       ;;
     "results")
-      cvlc --play-and-exit $pwd/commands/paStormTerm/paStormSounds/GladOS/well_done_glados.mp3
+      cvlc --play-and-exit $p/paStormSounds/GladOS/well_done_glados.mp3
       ;;
     "-h")
       echo "one of : sorry operational davepls why IKNOW results"
       ;;
     *)
       echo "wrong command" 
-      aplay -q $pwd/commands/paStormTerm/paStormSounds/HAL/halsorry.wav
+      aplay -q $p/paStormSounds/HAL/halsorry.wav
       exit 1
       ;;
   esac
