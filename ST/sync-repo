@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+current_dir=$PWD
+setup_dir=~/tools/internal-development-setup
+
+cd ~/code/clone
+#source $setup_dir/bashrc
+#st-proxy-set
+python3 $setup_dir/repo sync
+
+cd $current_dir
